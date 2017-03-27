@@ -1,5 +1,13 @@
+body button {
+  border-radius: 5px;
+  background-color: whitesmoke;
+  cursor: pointer; }
+
+body li {
+  cursor: pointer; }
+
 body header {
-  background-color: white;
+  background-color: whitesmoke;
   padding-top: 10px;
   height: 50px;
   margin-bottom: 0px; }
@@ -32,24 +40,95 @@ body header {
 
 body hr {
   margin-bottom: 25px;
-  margin-top: 5px; }
+  margin-top: 0px; }
+
+body #left {
+  align-content: right; }
+  body #left #profileImg {
+    height: 230px;
+    width: 230px; }
+    body #left #profileImg img {
+      max-width: 100%;
+      border-radius: 5px; }
+  body #left #info img {
+    display: inline-block;
+    margin-right: 5px; }
+  body #left #info #link {
+    margin-right: 2px; }
+  body #left #info p {
+    display: inline-block;
+    margin-right: 15px; }
+    body #left #info p a {
+      display: inline-block; }
+  body #left #stats div {
+    display: inline-block;
+    margin-right: 35px;
+    margin-left: 10px;
+    text-align: center; }
+    body #left #stats div p {
+      font-size: .75em; }
 
 body #content {
   background: white; }
   body #content ul {
     background: white; }
+    body #content ul button {
+      margin-left: 330px;
+      height: 30px;
+      width: 125px;
+      font-size: .65em; }
+      body #content ul button img {
+        margin-right: 5px; }
   body #content #actualContent .repoNav {
     padding-top: 15px; }
     body #content #actualContent .repoNav form {
       display: inline-block; }
       body #content #actualContent .repoNav form input {
         display: inline-block; }
-      body #content #actualContent .repoNav form button {
-        display: inline-block; }
+    body #content #actualContent .repoNav ul {
+      margin-left: 150px; }
+      body #content #actualContent .repoNav ul li {
+        color: #4fa3d5; }
+    body #content #actualContent .repoNav #newRepo {
+      background: linear-gradient(to top, #76ad52, #93cd6e);
+      color: white; }
+      body #content #actualContent .repoNav #newRepo img {
+        display: inline-block;
+        filter: invert(100%);
+        margin-right: 5px; }
     body #content #actualContent .repoNav ul {
       display: inline-block; }
       body #content #actualContent .repoNav ul li {
         display: inline-block;
         margin-right: 10px; }
+  body #content #actualContent .contentRight {
+    text-align: right; }
+    body #content #actualContent .contentRight p {
+      display: inline-block;
+      font-size: .75em;
+      margin-right: 10px;
+      color: slategrey; }
+    body #content #actualContent .contentRight img {
+      display: inline-block;
+      margin-right: 2px; }
   body #content h5 {
     color: #4486be; }
+  body #content p {
+    color: lightslategrey;
+    font-size: .75em; }
+  body #content .commits {
+    display: inline-block; }
+  body #content .commitContent span {
+    color: #99cfea; }
+  body #content .commitContent #push {
+    font-size: .9em; }
+  body #content .commitContent #imgFirst {
+    width: 30px;
+    height: 30px; }
+  body #content .commitContent #imgSecond {
+    width: 15px;
+    height: 15px; }
+  body #content .commitContent #pushId {
+    display: inline-block;
+    font-size: .75em;
+    margin-bottom: 25px; }

@@ -1,7 +1,14 @@
 body {
+    button {
+        border-radius: 5px;
+        background-color: whitesmoke;
+        cursor: pointer;
+    }
+    li {
+        cursor: pointer;
+    }
     header {
-        background-color: white;   
-        //border: 2px solid black;
+        background-color: whitesmoke;  
         padding-top: 10px;
         height: 50px;
         margin-bottom: 0px;
@@ -42,16 +49,59 @@ body {
     }
     hr {
         margin-bottom: 25px;
-        margin-top: 5px;
+        margin-top: 0px;
     }
     #left {
-       // border: 2px solid black;
+        align-content: right;
+       #profileImg {
+           height: 230px;
+           width: 230px;
+           img {
+               max-width: 100%;
+               border-radius: 5px;
+           }
+       }
+       #info {
+           img{
+               display: inline-block;
+               margin-right: 5px;
+           }
+           #link {
+               margin-right: 2px;
+           }
+           p {
+            display: inline-block;
+            margin-right: 15px;
+            a {
+                display: inline-block;
+            }
+           }
+       }
+       #stats {
+           div{
+               display: inline-block;
+               margin-right: 35px;
+               margin-left: 10px;
+               text-align: center;
+               p {
+                   font-size: .75em;
+               }
+           }
+       }
     }
     #content {
-       // border: 2px solid black;
         background: white;
         ul {
-            background: white
+            background: white;
+            button {
+                margin-left: 330px;
+                height: 30px;
+                width: 125px;
+                font-size: .65em;
+                img {
+                    margin-right: 5px;
+                }
+            }
         }
         #actualContent {
             .repoNav {
@@ -61,8 +111,20 @@ body {
                     input{
                         display: inline-block;
                     }
-                    button {
+                }
+                ul{
+                    margin-left: 150px;
+                    li {
+                        color: #4fa3d5;
+                    }
+                }
+                #newRepo {
+                    background: linear-gradient(to top, #76ad52, #93cd6e);
+                    color: white;
+                    img{
                         display: inline-block;
+                        filter: invert(100%);
+                        margin-right: 5px;
                     }
                 }
                  ul {
@@ -73,9 +135,51 @@ body {
                     }
                 } 
             }
+            .contentRight {
+                text-align: right;
+                p {
+                    display: inline-block;
+                    font-size: .75em;
+                    margin-right: 10px;
+                    color: slategrey;
+                }
+                img {
+                    display: inline-block;
+                    margin-right: 2px;
+                }
+
+            }
         }
         h5 {
             color: #4486be;
+        }
+        p {
+            color: lightslategrey;
+            font-size: .75em;
+        }
+        .commits {
+            display: inline-block;
+        }
+        .commitContent {
+            span {
+                color: #99cfea;
+            }
+            #push {
+                font-size: .9em;
+            }
+            #imgFirst {
+                width: 30px;
+                height: 30px;
+            }
+            #imgSecond {
+                width: 15px;
+                height: 15px;
+            }
+            #pushId {
+                display: inline-block;
+                font-size: .75em;
+                margin-bottom: 25px;
+            }
         }
     }
 }

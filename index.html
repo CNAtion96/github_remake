@@ -7,58 +7,66 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
         <link href="css/main.css" rel="stylesheet">
     </head>
-    <body class="container-fluid row">
-        <!---->
-        <!--Header for github navigation-->
-        <header class="col-md-12 row">
-            
-                <img src="imgs/mark-github.svg">
-                <form>
-                    <input type="text" id="search" placeholder="Search GitHub">
-                </form>
-            
-            <ul class="col-md-4"> 
-                <li>Explore</li>
-                <li>Gist</li>
-                <li>Blog</li>
-                <li>Help</li>
-            </ul>
-            <ul class="col-md-3 rightNav">
-                <li><div><img src="" alt=""><p class="usrName"></p></div></li>
-                <li><img src="imgs/plus.svg"><img id="triangle" src="imgs/triangle-down.svg"></li>
-                <li><img src="imgs/inbox.svg"></li>
-                <li><img src="imgs/gear.svg"></li>
-                <li><img src="imgs/sign-out.svg"></li>
-            </ul>
-        </header>
-        <hr class="col-md-12">
-        <!--left side for image and bio-->
-        <aside class="col-md-3" id="left">
-            <div id="profileImg">
-                <img src="" alt="">
-            </div>
-            <h1 id="name">fda</h1>
-            <h3 class="usrName">fda</h3>
-            <div id="bio">fa</div>
-        </aside>
-        <!--main content-->
-        <div id="content" class="col-md-9">
-            <ul class="nav nav-tabs col-md-12">
-                <li class="nav-item">
-                    <a class="nav-link linkOne " value="contributions">Contributions</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link linkTwo" value="repositories">Repositories</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link linkThree" value="activity">Public Activity</a>
-                </li>
-                <button id="edit">Edit Profile</button>
-            </ul>
-            <div class="col-md-12" id="actualContent">
+    <body>
+        <div class="container-fluid row">
+            <!---->
+            <!--Header for github navigation-->
+            <header class="col-md-12 row">
                 
+                    <img src="imgs/mark-github.svg">
+                    <form>
+                        <input type="text" id="search" placeholder="Search GitHub">
+                    </form>
+                
+                <ul class="col-md-4"> 
+                    <li>Explore</li>
+                    <li>Gist</li>
+                    <li>Blog</li>
+                    <li>Help</li>
+                </ul>
+                <ul class="col-md-3 rightNav">
+                    <li><div><img src="" alt=""><p class="usrName"></p></div></li>
+                    <li><img src="imgs/plus.svg"><img id="triangle" src="imgs/triangle-down.svg"></li>
+                    <li><img src="imgs/inbox.svg"></li>
+                    <li><img src="imgs/gear.svg"></li>
+                    <li><img src="imgs/sign-out.svg"></li>
+                </ul>
+            </header>
+            <hr class="col-md-12">
+            <!--left side for image and bio-->
+            <aside class="col-md-3" id="left">
+                <div id="profileImg">
+                </div>
+                <h3 id="name"></h3>
+                <p id="usrName"></p>
+                <hr>
+                <div id="bio"></div>
+                <hr>
+                <div id="info"></div>
+                <hr>
+                <div id="stats"></div>
+                <hr>
+                <div id="organizations"><h4>Organizations</h4></div>
+            </aside>
+            <!--main content-->
+            <div id="content" class="col-md-9">
+                <ul class="nav nav-tabs col-md-12">
+                    <li class="nav-item">
+                        <a class="nav-link linkOne active" value="contributions"><img src="imgs/diff-added.svg">Contributions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link linkTwo" value="repositories"><img src="imgs/repo.svg">Repositories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link linkThree" value="activity"><img src="imgs/rss.svg"> Public Activity</a>
+                    </li>
+                    <button id="edit"><img src="imgs/pencil.svg">Edit Profile</button>
+                </ul>
+                <div class="col-md-12" id="actualContent">
+                    
+                </div>
             </div>
-        </div>
+        </div> 
         <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>                
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
